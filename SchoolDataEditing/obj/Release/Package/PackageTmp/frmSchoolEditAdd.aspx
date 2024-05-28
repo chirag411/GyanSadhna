@@ -159,7 +159,7 @@
                                         <asp:ListItem Text="૯-૧૨ સળંગ એકમ" Value="૯-૧૨ સળંગ એકમ"></asp:ListItem>
                                     </asp:DropDownList></td>
                                 <td>
-                                    <asp:TextBox ID="txtIndexNo" runat="server" CssClass="form-control" type="number" step="any"></asp:TextBox>
+                                    <asp:TextBox ID="txtIndexNo" runat="server" CssClass="form-control" type="number" min="0" step="any"></asp:TextBox>
                                 </td>
                                 <td>
                                     <asp:DropDownList ID="ddlSchoolManagement" runat="server" CssClass="form-control">

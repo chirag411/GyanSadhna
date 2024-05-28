@@ -138,9 +138,7 @@ namespace SchoolDataEditing
         {
             try
             {
-                DataTable tempdt = new DataTable();
-                GridView1.DataSource = tempdt;
-                GridView1.DataBind();
+                
                 clsMasterActivity master = new clsMasterActivity
                 {
                     DistrictId = Convert.ToInt32(ddlDistrict.SelectedItem.Value)

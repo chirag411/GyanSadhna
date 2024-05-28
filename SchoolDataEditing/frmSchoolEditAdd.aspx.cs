@@ -47,6 +47,7 @@ namespace SchoolDataEditing
             {
                 if (!IsPostBack)
                 {
+                    submitBtn.Enabled = false;
                     BindGrid();
 
                     string schoolUDISECode = Request.QueryString["SchoolUDISECode"];
@@ -352,7 +353,7 @@ namespace SchoolDataEditing
                 dr["Std10FRC"] = txtStd10FrcFee.Text;
                 dr["SchoolMedium"] = ddlSchoolMedium.SelectedValue;
                 dt.Rows.Add(dr);
-
+                submitBtn.Enabled = true;
                 // Bind the updated DataTable to the GridView
                 gvSchoolDetails.DataSource = dt;
                 gvSchoolDetails.DataBind();
