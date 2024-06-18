@@ -22,5 +22,9 @@ namespace SchoolDataEditing
             }
            
         }
+        public void Consent_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

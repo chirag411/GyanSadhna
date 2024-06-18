@@ -13,6 +13,7 @@
             <form id="form">
                 <div class="mt-5">
                     <h3 class="mb-3">Add / Edit School List</h3>
+                    <h6 class="mb-3">તમામ વિગત અંગ્રેજીમાં જ ભરવી..</h6>
                     <asp:HiddenField ID="hfTableData" runat="server" />
                     <div class="row">
                         <div class="col-md-6">
@@ -81,8 +82,10 @@
                     </div>
 
                     <hr />
+                    <span style="color: red; font-size: smaller" class="mb-3">નીચેની ૩ શરતો ફક્ત સેલ્ફ ફાઈનાન્સ શાળાઓને જ લાગુ પડે છે.</span>
+                    <div class="row mt-3">
 
-                    <div class="row">
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>ધોરણ ૯ થી ૧૨ એક જ કેમ્પસ માં ચાલે છે ?</label>
@@ -106,7 +109,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>શાળા નું છેલ્લા ૫ વર્ષ પૈકી છેલ્લા ૩ વર્ષ ધોરણ ૧૦ નુ પરિણામ ૮૦% કે તેથી વધુ આવેલ છે ?</label>
+                                <label>શાળા નું છેલ્લા ૫ વર્ષ પૈકી ગમેતે ૩ વર્ષ ધોરણ ૧૦ નુ પરિણામ ૮૦% કે તેથી વધુ આવેલ છે ?</label>
                                 <asp:DropDownList ID="SQue3" runat="server" CssClass="form-control" Enabled="False">
                                     <asp:ListItem Text="Yes" Value="Yes"></asp:ListItem>
                                     <asp:ListItem Text="No" Value="No"></asp:ListItem>
@@ -298,9 +301,9 @@
                         </div>
                     </div>
 
-                    <div class="form-group text-center">
+<%--                    <div class="form-group text-center">
                         <asp:Button ID="submitBtn" runat="server" CssClass="btn btn-primary" Text="Submit" OnClick="btnSubmit_Click" />
-                    </div>
+                    </div>--%>
                 </div>
             </form>
         </section>

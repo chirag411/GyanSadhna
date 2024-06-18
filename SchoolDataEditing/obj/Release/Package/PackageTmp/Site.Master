@@ -247,6 +247,8 @@
                     </ul>
                     <!-- End Profile Dropdown Items -->
                 </li>
+
+
                 <!-- End Profile Nav -->
 
             </ul>
@@ -275,28 +277,56 @@
 
             <li class="nav-item">
                 <a class="nav-link " data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-journal-text"></i><span>Entry Pages</span><i class="bi bi-chevron-down ms-auto"></i>
+                    <i class="bi bi-journal-text"></i><span>School List</span><i class="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul id="forms-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
                     <li>
                         <a href="Default.aspx">
-                            <i class="bi bi-circle"></i><span>School List</span>
+                            <i class="bi bi-circle"></i><span>School List - (2024)</span>
                         </a>
                     </li>
-                    <li>
+                    <%--<li>
                         <a href="frmSchoolEditAdd.aspx">
                             <i class="bi bi-circle"></i><span>Add New School</span>
                         </a>
-                    </li>
+                    </li>--%>
                     <li>
                         <a href="frmDeletedSchools.aspx">
                             <i class="bi bi-circle"></i><span>Deleted School List</span>
                         </a>
                     </li>
+
                 </ul>
             </li>
             <!-- End Forms Nav -->
 
+            <li class="nav-item">
+                <a class="nav-link " data-bs-target="#forms" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-journal-text"></i><span>Student List</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="forms" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="frmStudentList.aspx">
+                            <i class="bi bi-circle"></i><span>Student List - (2023) - Pending</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="frmStudentListCompleted.aspx">
+                            <i class="bi bi-circle"></i><span>Student List - (2023) - Completed</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="frmTransferFromOther.aspx">
+                            <i class="bi bi-circle"></i><span>Student List - From Other DIstrict</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="frmTransferToOther.aspx">
+                            <i class="bi bi-circle"></i><span>Student List - To Other District</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
         </ul>
 

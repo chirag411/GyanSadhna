@@ -10,6 +10,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title text-center">મુખ્યમંત્રી જ્ઞાન સાધના મેરીટ સ્કોલરશીપ યોજના (શાળા એમ્પેનલ મોડ્યુલ -૨૦૨૪)</h5>
+                            <h6 style="color: red; font-size: smaller">સરકારી અથવા ગ્રાન્ટેડ શાળા બંધ થઇ હોય અથવા તેમાં ફક્ત ધોરણ ૧૧-૧૨ ચાલતું હોય તેવા કિસ્સામાં સરકારી અથવા ગ્રાન્ટેડ શાળા ડીલીટ કરવાની છે. અન્યથા તેમાં વિગત ભરી તેને વેરીફાય કરવાની છે.</h6>
                             <div class="row">
                                 <div class="col-md-3 d-flex flex-column gap-2">
                                     <label for="ddlBoard">Select School Board</label>
@@ -253,7 +254,7 @@
                                             <ItemTemplate>
                                                 <div class="btn-group" role="group">
                                                     <asp:Button ID="btnEdit" runat="server" Text="Edit" CommandName="Edit" CommandArgument='<%# Eval("SchoolUDISECode") %>' CssClass="btn btn-primary btn-sm" />
-                                                    <asp:Button ID="btnDelete" runat="server" Text="Delete" CommandName="Delete" CommandArgument='<%# Eval("SchoolUDISECode") %>' CssClass="btn btn-danger btn-sm" OnClientClick="return confirm('Are you sure you want to delete this record?');" />
+                                                    <%--<asp:Button ID="btnDelete" runat="server" Text="Delete" CommandName="Delete" CommandArgument='<%# Eval("SchoolUDISECode") %>' CssClass="btn btn-danger btn-sm" OnClientClick="return confirm('Are you sure you want to delete this record?');" />--%>
                                                 </div>
                                             </ItemTemplate>
                                         </asp:TemplateField>

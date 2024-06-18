@@ -568,9 +568,15 @@
     <Content Include="frmAddSchool.aspx" />
     <Content Include="frmChngPassword.aspx" />
     <Content Include="frmDeletedSchools.aspx" />
+    <Content Include="frmGridDataShow.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="frmLogout.aspx" />
     <Content Include="frmSchoolEditAdd.aspx" />
+    <Content Include="frmStudentEdit.aspx" />
+    <Content Include="frmStudentList.aspx" />
+    <Content Include="frmStudentListCompleted.aspx" />
+    <Content Include="frmTransferFromOther.aspx" />
+    <Content Include="frmTransferToOther.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\banner2.jpg" />
     <Content Include="img\bg11.png" />
@@ -586,11 +592,6 @@
     <Content Include="js\sweet-alert.js" />
     <Content Include="js\wow.min.js" />
     <Content Include="Media\123.png" />
-    <Content Include="Media\24010106502\1.jpg" />
-    <Content Include="Media\24010106502\2.jpg" />
-    <Content Include="Media\24010106502\3.jpg" />
-    <Content Include="Media\24010106502\4.jpg" />
-    <Content Include="Media\24010106502\5.jpg" />
     <Content Include="Media\ChangePWD.jpg" />
     <Content Include="Media\download.jpeg" />
     <Content Include="Media\eye.png" />
@@ -678,6 +679,13 @@
     <Compile Include="frmDeletedSchools.aspx.designer.cs">
       <DependentUpon>frmDeletedSchools.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmGridDataShow.aspx.cs">
+      <DependentUpon>frmGridDataShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmGridDataShow.aspx.designer.cs">
+      <DependentUpon>frmGridDataShow.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -699,6 +707,41 @@
     <Compile Include="frmSchoolEditAdd.aspx.designer.cs">
       <DependentUpon>frmSchoolEditAdd.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmStudentEdit.aspx.cs">
+      <DependentUpon>frmStudentEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStudentEdit.aspx.designer.cs">
+      <DependentUpon>frmStudentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentList.aspx.cs">
+      <DependentUpon>frmStudentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStudentList.aspx.designer.cs">
+      <DependentUpon>frmStudentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentListCompleted.aspx.cs">
+      <DependentUpon>frmStudentListCompleted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmStudentListCompleted.aspx.designer.cs">
+      <DependentUpon>frmStudentListCompleted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferFromOther.aspx.cs">
+      <DependentUpon>frmTransferFromOther.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTransferFromOther.aspx.designer.cs">
+      <DependentUpon>frmTransferFromOther.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferToOther.aspx.cs">
+      <DependentUpon>frmTransferToOther.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmTransferToOther.aspx.designer.cs">
+      <DependentUpon>frmTransferToOther.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -712,6 +755,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Media\વિદ્યાર્થી પ્રવેશ ફોર્મ %28જ્ઞાનસાધના%29.pdf" />
     <None Include="packages.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Site.Master" />
@@ -724,6 +768,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="BankStatement\" />
+    <Folder Include="ConsentLetters\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

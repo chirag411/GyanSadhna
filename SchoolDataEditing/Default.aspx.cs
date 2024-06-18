@@ -225,6 +225,8 @@ namespace SchoolDataEditing
         {
             try
             {
+                GridView1.HeaderRow.FindControl("txtSearchSchoolUDISECode").Visible = false;
+                GridView1.HeaderRow.FindControl("btnSearchSchoolUDISECode").Visible = false;
                 // Hide the edit and delete buttons before exporting
                 HideEditDeleteButtons(true);
 
@@ -243,6 +245,8 @@ namespace SchoolDataEditing
                 Response.Output.Write(sw.ToString());
                 Response.Flush();
                 Response.End();
+                //GridView1.HeaderRow.FindControl("txtSearchSchoolUDISECode").Visible = true;
+                //GridView1.HeaderRow.FindControl("btnSearchSchoolUDISECode").Visible = true;
             }
             catch (Exception ex)
             {
@@ -304,6 +308,7 @@ namespace SchoolDataEditing
                 {
                     column.Visible = !hide;
                 }
+                
             }
         }
 

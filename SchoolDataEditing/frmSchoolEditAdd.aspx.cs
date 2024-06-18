@@ -47,7 +47,7 @@ namespace SchoolDataEditing
             {
                 if (!IsPostBack)
                 {
-                    submitBtn.Enabled = false;
+                    //submitBtn.Enabled = false;
                     BindGrid();
 
                     string schoolUDISECode = Request.QueryString["SchoolUDISECode"];
@@ -76,6 +76,7 @@ namespace SchoolDataEditing
                     DataRow row = dtresult.Rows[0];
 
                     // Populate form fields
+                   
                     udiseCode.Text = row["schoolid"].ToString();
                     district.Text = row["District"].ToString();
                     schoolName.Text = row["School"].ToString();
@@ -263,13 +264,15 @@ namespace SchoolDataEditing
 
         protected void schoolManagement_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Handle the school management selected index change event
+           
+
         }
 
         protected void udiseCode_TextChanged(object sender, EventArgs e)
         {
             try
             {
+                
                 string districtId = Session["districtId"].ToString();
 
                 clsMasterActivity Master = new clsMasterActivity();
@@ -297,7 +300,7 @@ namespace SchoolDataEditing
                             SQue1.SelectedValue = row["Que1"].ToString();
                             SQue2.SelectedValue = row["Que2"].ToString();
                             SQue3.SelectedValue = row["Que3"].ToString();
-                            submitBtn.Enabled = true;
+                            //submitBtn.Enabled = true;
                             LoadSchoolGrid(udiseCode.Text);
                         }
                         catch (Exception)
@@ -335,9 +338,9 @@ namespace SchoolDataEditing
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-            if (ddlSchoolCategory.SelectedItem.Value == "Select" || ddlSchoolManagement.SelectedValue == "Select" || ddlSchoolMedium.SelectedValue == "Select")
+            if (ddlSchoolCategory.SelectedItem.Value == "Select" || ddlSchoolManagement.SelectedValue == "Select" || ddlSchoolMedium.SelectedValue == "Select" || txtIndexNo.Text =="" || txtStd9FrcFee.Text =="" || txtStd10FrcFee.Text=="")
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Please Select All The Fields...!');", true);
+                ScriptManager.RegisterStartupScript(this, GetType(), "showalert", "alert('Please Select/FIll All The Fields in Grid..!');", true);
             }
             else
             {
@@ -353,7 +356,7 @@ namespace SchoolDataEditing
                 dr["Std10FRC"] = txtStd10FrcFee.Text;
                 dr["SchoolMedium"] = ddlSchoolMedium.SelectedValue;
                 dt.Rows.Add(dr);
-                submitBtn.Enabled = true;
+                //submitBtn.Enabled = true;
                 // Bind the updated DataTable to the GridView
                 gvSchoolDetails.DataSource = dt;
                 gvSchoolDetails.DataBind();
@@ -367,5 +370,7 @@ namespace SchoolDataEditing
                 ddlSchoolMedium.SelectedIndex = 0;
             }
         }
+
+
     }
 }
